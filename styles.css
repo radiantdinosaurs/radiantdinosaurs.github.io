@@ -100,8 +100,8 @@ strong {
 .header-title h2 {
     margin: 0;
     line-height: .9em;
-    padding-left: .3em;
-    padding-right: .3em;
+    padding-left: .2em;
+    padding-right: .2em;
     color: #FFFFFF;
 }
 
@@ -178,10 +178,10 @@ strong {
 
 .computer-screen-typewriter-container {
     padding-top: .45em;
-    line-height: 1.4;
 }
 
 #typewriter {
+    line-height: 1.4em;
     margin: 0;
     font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
     &:after {
@@ -286,10 +286,10 @@ ul {
         padding-right: 0;
     }
     .header-title h1 {
-        font-size: 44px;
+        font-size: 43px;
     }
     .header-title h2 {
-        font-size: 34px;
+        font-size: 33px;
     }
     .computer-screen {
         width: 90%;
