@@ -92,16 +92,16 @@ strong {
 .header-title h1 {
     margin: 0;
     line-height: .9em;
-    padding-left: .5em;
-    padding-right: .5em;
+    padding-left: .3em;
+    padding-right: .3em;
     color: #FFFFFF;
 }
 
 .header-title h2 {
     margin: 0;
     line-height: .9em;
-    padding-left: .5em;
-    padding-right: .5em;
+    padding-left: .3em;
+    padding-right: .3em;
     color: #FFFFFF;
 }
 
@@ -178,7 +178,7 @@ strong {
 
 .computer-screen-typewriter-container {
     padding-top: .45em;
-    line-height: 1.3;
+    line-height: 1.4;
 }
 
 #typewriter {
