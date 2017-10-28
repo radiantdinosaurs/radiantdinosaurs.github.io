@@ -164,9 +164,9 @@ strong {
 .computer-screen-number-line {
     background-color: rgb(240, 240, 240);
     border-right: solid 1px rgb(207, 207, 207);
-    padding: .6em .2em .3em .6em;
+    padding: .9em .2em .3em .6em;
     margin-right: 1em;
-    line-height: .6em;
+    line-height: .7em;
     text-align: right;
     color: #808388;
     display: inline;
@@ -175,7 +175,8 @@ strong {
 }
 
 .computer-screen-typewriter-container {
-    padding-top: .3em;
+    padding-top: .5em;
+    line-height: 1.4;
 }
 
 #typewriter {
@@ -283,10 +284,10 @@ ul {
         padding-right: 0;
     }
     .header-title h1 {
-        font-size: 45px;
+        font-size: 44px;
     }
     .header-title h2 {
-        font-size: 35px;
+        font-size: 34px;
     }
     .computer-screen {
         width: 90%;
