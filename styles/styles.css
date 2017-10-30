@@ -193,21 +193,6 @@ strong {
     overflow: scroll;
 }
 
-@-webkit-keyframes blink {
-    0% {opacity: 0;}
-    100% {opacity: 1;}
-}
-
-@-moz-keyframes blink {
-    0% {opacity: 0;}
-    100% {opacity: 1;}
-}
-
-@keyframes blink {
-    0% {opacity: 0;}
-    100% {opacity: 1;}
-}
-
 .var {
     color: rgb(150, 41, 153);
     font-weight: bold;
