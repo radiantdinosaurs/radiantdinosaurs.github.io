@@ -181,7 +181,7 @@ strong {
 .computer-screen-number-line-container {
     background-color: rgb(240, 240, 240);
     border-right: solid 1px rgb(207, 207, 207);
-    padding: .6em .2em 0 .6em;
+    padding: .6em .2em 0 .5em;
     text-align: right;
     color: #808388;
     display: inline;
@@ -189,8 +189,9 @@ strong {
 }
 
 .computer-screen-typewriter-container {
-    padding: .6em .2em 0 .6em;
-    overflow: scroll;
+    padding: .6em .1em 0 .5em;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 .var {
@@ -285,7 +286,7 @@ ul {
     }
     .computer-screen {
         width: 90%;
-        font-size: 12px;
+        font-size: 11px;
     }
     .skills {
         width: 100%;
