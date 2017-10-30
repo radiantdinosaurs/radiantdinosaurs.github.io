@@ -47,7 +47,6 @@ strong {
     width: 100%;
     font-family: 'Open Sans', sans-serif;
     text-decoration: none;
-    font-size: 1.5em;
     letter-spacing: .1em;
     color: #FFFFFF;
     font-weight: 500;
@@ -92,46 +91,46 @@ strong {
 .header-title h1 {
     margin: 0;
     line-height: .9em;
-    padding-left: .3em;
-    padding-right: .3em;
+    padding-left: .1em;
+    padding-right: .1em;
     color: #FFFFFF;
 }
 
 .header-title h2 {
     margin: 0;
     line-height: .9em;
-    padding-left: .2em;
-    padding-right: .2em;
+    padding-left: .1em;
+    padding-right: .1em;
     color: #FFFFFF;
 }
 
 .header-links img {
-  width: 36px;
-  height: 36px;
+    width: 36px;
+    height: 36px;
 }
 
 .header-links a {
-  position: relative;
-  margin: 0 .4em 0 .4em;
+    position: relative;
+    margin: 0 .4em 0 .4em;
 }
 
 .header-links a:before {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
-  height: .15em;
-  background-color: #8B6FB2;
-  content: '';
-  opacity: .3;
-  -webkit-transform: scaleX(.9);
-  transition-property: opacity, -webkit-transform;
-  transition-duration: .2s;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: .15em;
+    background-color: #8B6FB2;
+    content: '';
+    opacity: .3;
+    -webkit-transform: scaleX(.9);
+    transition-property: opacity, -webkit-transform;
+    transition-duration: .2s;
 }
 
 .header-links a:hover:before {
-  opacity: 1;
-  -webkit-transform: scaleX(1);
+    opacity: 1;
+    -webkit-transform: scaleX(1);
 }
 
 .computer-webcam {
@@ -163,31 +162,24 @@ strong {
     border-top-right-radius: 2em;
 }
 
-.computer-screen-number-line {
+.computer-screen pre {
+    font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+    line-height: 1.2em;
+}
+
+.computer-screen-number-line-container {
     background-color: rgb(240, 240, 240);
     border-right: solid 1px rgb(207, 207, 207);
-    padding: .8em .2em .3em .6em;
-    margin-right: 1em;
-    line-height: .7em;
+    padding: .6em .2em 0 .6em;
     text-align: right;
     color: #808388;
     display: inline;
-    width: auto;
     white-space: nowrap;
 }
 
 .computer-screen-typewriter-container {
-    padding-top: .45em;
-}
-
-#typewriter {
-    line-height: 1.4em;
-    margin: 0;
-    font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
-    &:after {
-        content: "|";
-        animation: blink 500ms linear infinite alternate;
-    }
+    padding: .6em .2em 0 .6em;
+    overflow: scroll;
 }
 
 @-webkit-keyframes blink {
@@ -235,6 +227,7 @@ strong {
 .skills-card {
     text-align: center;
     margin: 2em;
+    background-color: #8B6FB2;
 }
 
 ul {
@@ -285,18 +278,24 @@ ul {
         padding-left: 0;
         padding-right: 0;
     }
+    .nav-links a {
+        font-size: 22px;
+    }
     .header-title h1 {
-        font-size: 43px;
+        font-size: 40px;
     }
     .header-title h2 {
-        font-size: 33px;
+        font-size: 35px;
     }
     .computer-screen {
         width: 90%;
-        font-size: 13px;
+        font-size: 12px;
     }
-    #typewriter {
-        font-size: 13px;
+    .skills {
+        width: 100%;
+    }
+    .project {
+        width: 100%;
     }
 
 }
@@ -304,19 +303,22 @@ ul {
 /* Tablet Styles */
 @media only screen and (min-width: 401px) and (max-width: 960px) {
     .nav {
-        justify-content: space-between;
+        justify-content: space-around;
         padding-left: 0;
         padding-right: 0;
     }
+    .nav-links a {
+        font-size: 28px;
+    }
     .header-title h1 {
-        font-size: 55px;
+        font-size: 50px;
     }
     .header-title h2 {
-        font-size: 45px;
+        font-size: 40px;
     }
     .computer-screen {
-        width: 95%;
-        font-size: 14px;
+        width: 90%;
+        font-size: 13px;
     }
     .skills {
         width: 50%;
@@ -337,6 +339,9 @@ ul {
         padding-left: 1.5em;
         padding-right: 1.5em;
         width: 960px;
+    }
+    .nav-links a {
+        font-size: 28px;
     }
     .header-title h1 {
         font-size: 60px;
