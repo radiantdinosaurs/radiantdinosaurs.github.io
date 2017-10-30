@@ -104,6 +104,11 @@ strong {
     color: #FFFFFF;
 }
 
+.header-links {
+    display: flex;
+    flex-direction: row;
+}
+
 .header-links img {
     width: 36px;
     height: 36px;
@@ -112,6 +117,12 @@ strong {
 .header-links a {
     position: relative;
     margin: 0 .4em 0 .4em;
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+    letter-spacing: .1em;
+    color: #FFFFFF;
+    font-weight: 500;
 }
 
 .header-links a:before {
