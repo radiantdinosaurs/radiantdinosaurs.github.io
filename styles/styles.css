@@ -21,6 +21,11 @@ strong {
     font-weight: bold;
 }
 
+.material-icons.md-36.md-light {
+    font-size: 36px;
+    color: rgba(255, 255, 255, 1);
+}
+
 .page {
     display: flex;
     flex-wrap: wrap;
@@ -51,6 +56,7 @@ strong {
     color: #FFFFFF;
     font-weight: 500;
     margin: 0 1em 0 1em;
+    padding: 0 0 .1em 0;
     position: relative;
 }
 
@@ -59,13 +65,13 @@ strong {
     top: 100%;
     left: 0;
     width: 100%;
-    height: .15em;
+    height: 3px;
     background-color: #8B6FB2;
     content: '';
     -webkit-transform: translateY(8px);
     opacity: 0;
     transition-property: -webkit-transform, opacity;
-    transition-duration: .2s;
+    transition-duration: .3s;
 }
 
 .nav-links a:hover:before {
@@ -163,7 +169,6 @@ strong {
     font-variant: normal;
     font-weight: 400;
     background-color:  rgb(248, 248, 248);
-    width: 90%;
     display: flex;
     flex-wrap: nowrap;
     border-top: solid 45px #5d707f;
@@ -179,6 +184,7 @@ strong {
 }
 
 .computer-screen-number-line-container {
+    margin: 0;
     background-color: rgb(240, 240, 240);
     border-right: solid 1px rgb(207, 207, 207);
     padding: .6em .2em 0 .5em;
@@ -189,9 +195,33 @@ strong {
 }
 
 .computer-screen-typewriter-container {
+    margin: 0;
     padding: .6em .1em 0 .5em;
     overflow-x: hidden;
     overflow-y: hidden;
+}
+
+#typewriter:after {
+    content: "|";
+    -webkit-animation: blink 500ms linear infinite alternate;
+    animation: blink 500ms linear infinite alternate;
+}
+
+@-webkit-keyframes blink {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 .var {
@@ -279,13 +309,18 @@ ul {
         font-size: 22px;
     }
     .header-title h1 {
-        font-size: 40px;
+        font-size: 38px;
     }
     .header-title h2 {
-        font-size: 35px;
+        font-size: 33px;
     }
     .computer-screen {
-        width: 90%;
+        width: 85%;
+    }
+    .computer-screen-typewriter-container {
+        font-size: 11px;
+    }
+    .computer-screen-number-line-container {
         font-size: 11px;
     }
     .skills {
@@ -300,21 +335,26 @@ ul {
 /* Tablet Styles */
 @media only screen and (min-width: 401px) and (max-width: 960px) {
     .nav {
-        justify-content: space-around;
-        padding-left: 0;
-        padding-right: 0;
+        justify-content: space-between;
+        padding-left: 2em;
+        padding-right: 2em;
     }
     .nav-links a {
         font-size: 28px;
     }
     .header-title h1 {
-        font-size: 50px;
+        font-size: 48px;
     }
     .header-title h2 {
-        font-size: 40px;
+        font-size: 38px;
     }
     .computer-screen {
-        width: 90%;
+        width: 85%;
+    }
+    .computer-screen-typewriter-container {
+        font-size: 13px;
+    }
+    .computer-screen-number-line-container {
         font-size: 13px;
     }
     .skills {
@@ -347,7 +387,13 @@ ul {
         font-size: 40px;
     }
     .computer-screen {
-        font-size: 16px;
+        width: 90%;
+    }
+    .computer-screen-typewriter-container {
+        font-size: 18px;
+    }
+    .computer-screen-number-line-container {
+        font-size: 18px;
     }
     .skills {
         width: 25%;
