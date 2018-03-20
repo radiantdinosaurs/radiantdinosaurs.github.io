@@ -32,7 +32,7 @@ ul {
 /**************************************************** Top Section ****************************************************/
 .top-section-container {
     display: grid;
-    grid-template-rows: 70px 1fr;
+    grid-template-rows: 60px 1fr;
     grid-template-columns: 1fr;
     justify-content: center;
     width: 100vw;
@@ -46,7 +46,7 @@ ul {
     display: flex;
     background-color: transparent;
     width: 100%;
-    height: 70px;
+    height: 60px;
     justify-content: center;
 }
 .nav {
@@ -56,7 +56,7 @@ ul {
     grid-template-rows: 1fr;
     align-items: center;
     width: 100%;
-    height: 70px;
+    height: 60px;
     grid-gap: 1rem;
     max-width: 950px;
 }
@@ -235,7 +235,7 @@ ul {
     grid-row: 2 / 3;
     grid-column: 1 / -1;
     width: 100%;
-    height: 70px;
+    height: 48px;
 }
 .down-arrow-container a {
     justify-self: center;
@@ -244,7 +244,7 @@ ul {
 .down-arrow {
     align-self: end;
     justify-self: center;
-    background: transparent url('../images/ic_expand_more_white_48px.svg');
+    background: transparent url('../images/ic_expand_more_white_48px.svg') center;
     border: none;
     text-decoration: none;
     cursor: pointer;
