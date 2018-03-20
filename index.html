@@ -6,35 +6,48 @@
               content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
         <title>@radiantdinosaurs</title>
         <link rel="stylesheet" href="/styles/styles.css"/>
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto|PT+Mono|Material+Icons|Lato" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600|Roboto:300,400,500|PT+Mono|Lato|Rammetto+One" rel="stylesheet">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <body>
         <div class="page">
-            <!--NAVIGATION BAR-->
-            <div class="section nav">
-                <div class="nav-links">
-                    <a href="#"><i class="material-icons md-36 md-light">home</i></a>
-                    <!--<a href="#"><img src="images/white-home.svg"></a>-->
-                </div>
-                <div class="nav-links">
-                    <a href="#skills">Skills</a><a href="#projects">Projects</a>
-                </div>
-            </div>
-            <!--END NAVIGATION BAR-->
 
-            <!--HEADER-->
-            <div class="section header">
-                <div class="header-title">
-                    <h1>Bethany Corder</h1>
-                    <br>
-                    <h2>Web Developer</h2>
+            <!--TOP SECTION-->
+            <div class="top-section-container">
+
+                <!--NAVIGATION BAR-->
+                <div class="nav-container">
+                    <div class="nav">
+                        <a href="#" class="justify-start">
+                            <button class="nav-logo">
+                                B
+                            </button>
+                        </a>
+                        <a href="#skills" class="justify-end">
+                            <button class="nav-link">
+                                Skills
+                            </button>
+                        </a>
+                        <a href="#projects" class="justify-end">
+                            <button class="nav-link">
+                                Projects
+                            </button>
+                        </a>
+                    </div>
                 </div>
-                <div class="header-links">
-                    <a href="https://github.com/radiantdinosaurs" ><img src="/images/white-github.png" alt="GitHub icon." /></a><a href="mailto:radiantdinosaurs@gmail.com"><img src="/images/white-email.svg" alt="Email icon." /></a>
-                </div>
-                <div class="computer-webcam"></div>
-                <div class="computer-screen">
-                    <div class="computer-screen-number-line-container">
+                <!--END NAVIGATION BAR-->
+
+                <!--HEADER-->
+                <div class="header-container">
+                    <div class="header-titles">
+                        <h1>Bethany Corder</h1>
+                        <br>
+                        <h2>Full-Stack Web Developer</h2>
+                        <br>
+                    </div>
+                    <div class="computer-screen-container">
+                        <div class="computer-cam"></div>
+                        <div class="computer-screen"></div>
+                        <div class="computer-screen-number-line-container">
 <pre id="number-line">
 1
 2
@@ -47,104 +60,171 @@
 9
 10
 11
-12</pre>
-                    </div>
-
-                    <div class="computer-screen-typewriter-container">
-<pre id="typewriter">
+12
+13
+14
+15
+16</pre>
+                        </div>
+                        <div class="computer-screen-typewriter-container">
+<pre id="typewriter-desktop" class="typewriter">
 <span class="var">const</span> <span class="var-name-em">human</span> = {
-    <span class="var-name">name</span>: <span class="string-highlight">"Bethany Corder"</span>,
-    <span class="var-name">location</span>: <span class="string-highlight">"Earth"</span>
-    };
+    <span class="var-name">name</span>: <span class="string-highlight">'Bethany Corder'</span>,
+    <span class="var-name">location</span>: <span class="string-highlight">'Earth'</span>
+}
 
 <span class="var">function</span> <em>sayHello()</em> {
-    <span class="var-name">console.</span>log(<span class="string-highlight">"Hello! "</span> +
-    <span class="string-highlight">"My name is "</span> + <span class="var-name-em">human.</span><span class="var-name">name</span>);
-};
+    <span class="var-name">console.</span>log(<span class="string-highlight">'Hello! </span><span class="string-highlight">My name is '</span> + <span class="var-name-em">human.</span><span class="var-name">name</span>)
+}
 
-<em>sayHello();</em></pre>
+<em>sayHello()</em>
+</pre>
+<pre id="typewriter-mobile" class="typewriter">
+<span class="var">const</span> <span class="var-name-em">human</span> = {
+  <span class="var-name">name</span>: <span class="string-highlight">'Bethany Corder'</span>,
+  <span class="var-name">location</span>: <span class="string-highlight">'Earth'</span>
+}
+
+<span class="var">function</span> <em>sayHello()</em> {
+  <span class="var-name">console.</span>log(<span class="string-highlight">'Hello! '</span> +
+    <span class="string-highlight">'My name is '</span> +
+    <span class="var-name-em">human.</span><span class="var-name">name</span>)
+}
+
+<em>sayHello()</em></pre>
+<pre id="typewriter-tablet" class="typewriter">
+<span class="var">const</span> <span class="var-name-em">human</span> = {
+    <span class="var-name">name</span>: <span class="string-highlight">'Bethany Corder'</span>,
+    <span class="var-name">location</span>: <span class="string-highlight">'Earth'</span>
+}
+
+<span class="var">function</span> <em>sayHello()</em> {
+    <span class="var-name">console.</span>log(<span class="string-highlight">'Hello! </span><span class="string-highlight">My name is '</span> +
+        <span class="var-name-em">human.</span><span class="var-name">name</span>)
+}
+
+<em>sayHello()</em></pre>
+                    </div>
+                    </div>
+                    <div class="down-arrow-container">
+                        <a href="#skills">
+                            <button class="down-arrow bounce" id="bouncing-down-arrow">
+                            </button>
+                        </a>
                     </div>
                 </div>
+                <!--END HEADER-->
+
             </div>
-            <!--END HEADER-->
+            <!--END TOP SECTION-->
 
             <!--SKILLS-->
-            <div class="section skills" id="skills">
-                <div class="skills-card">
-                    <h3>Front-End</h3>
-                    <ul>
-                        <li>Item</li>
-                        <li>Item</li>
-                        <li>Item</li>
-                        <li>Item</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="section skills">
-                <div class="skills-card">
-                    <h3>Back-End</h3>
-                    <ul>
-                        <li>Item</li>
-                        <li>Item</li>
-                        <li>Item</li>
-                        <li>Item</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="section skills">
-                <div class="skills-card">
-                    <h3>Tools</h3>
-                    <ul>
-                        <li>Item</li>
-                        <li>Item</li>
-                        <li>Item</li>
-                        <li>Item</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="section skills">
-                <div class="skills-card">
-                    <h3>Something</h3>
-                    <ul>
-                        <li>Item</li>
-                        <li>Item</li>
-                        <li>Item</li>
-                        <li>Item</li>
-                    </ul>
+            <div class="skills-section-container">
+                <div class="skills-section" id="skills">
+                    <div class="skills-section-header">
+                        <h1>My Skills</h1>
+                        <h2>Languages, tools, and everything in-between that I've taken time to learn and use</h2>
+                    </div>
+                    <div class="skills-section-card">
+                        <h2>Front-End</h2>
+                        <ul>
+                            <li>HTML5</li>
+                            <li>CSS3</li>
+                            <li>Pug</li>
+                            <li>Handlebars</li>
+                        </ul>
+                    </div>
+                    <div class="skills-section-card">
+                        <h2>Back-End</h2>
+                        <ul>
+                            <li>Node.js</li>
+                            <li>MongoDB</li>
+                            <li>MySQL</li>
+                        </ul>
+                    </div>
+                    <div class="skills-section-card">
+                        <h2>Languages</h2>
+                        <ul>
+                            <li>JavaScript</li>
+                            <li>Java</li>
+                        </ul>
+                    </div>
+                    <div class="skills-section-card">
+                        <h2>Other</h2>
+                        <ul>
+                            <li>GitHub</li>
+                            <li>Docker</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
             <!--END SKILLS-->
 
             <!--PROJECTS-->
-            <div class="section project" id="projects">
-                <div class="project-card">
-                    <h3>Project</h3>
-                </div>
-            </div>
-            <div class="section project">
-                <div class="project-card">
-                    <h3>Project</h3>
-                </div>
-            </div>
-            <div class="section project">
-                <div class="project-card">
-                    <h3>Project</h3>
-                </div>
-            </div>
-            <div class="section project">
-                <div class="project-card">
-                    <h3>Project</h3>
+            <div class="project-section-container">
+                <div class="project-section" id="projects">
+                    <div class="project-section-header">
+                        <h1>My Work</h1>
+                        <h2>Want to see more work? Check out my <a href="https://github.com/radiantdinosaurs">GitHub</a>.</h2>
+                    </div>
+                    <div class="project-section-card" id="slothbucket">
+                        <h2>Slothbucket</h2>
+                        <div class="project-link-container" id="slothbucket-project-link">
+                            <a href="https://github.com/radiantdinosaurs/slothbucket">
+                                <button class="project-button github-link"></button>
+                            </a>
+                            <!--<a href="">-->
+                                <!--<button class="project-button website-link"></button>-->
+                            <!--</a>-->
+                        </div>
+                        <div class="project-description" id="slothbucket-description">
+                            <p>An image hosting site for <em>only</em> pictures of sloths.</p>
+                        </div>
+                    </div>
+                    <div class="project-section-card" id="myanimestats">
+                        <h2>MyAnimeStats</h2>
+                        <div class="project-link-container" id="myanimestats-project-link">
+                            <a href="https://github.com/radiantdinosaurs/myanimestats">
+                                <button class="project-button github-link"></button>
+                            </a>
+                            <!--<a href="">-->
+                                <!--<button class="project-button website-link"></button>-->
+                            <!--</a>-->
+                        </div>
+                        <div class="project-description" id="myanimestats-description">
+                            <p>See interesting stats about your anime-watching habits.</p>
+                        </div>
+                    </div>
+                    <div class="project-section-card" id="what-happened">
+                        <h2>What Happened?</h2>
+                        <div class="project-link-container" id="what-happened-project-link">
+                            <a href="https://github.com/radiantdinosaurs/what-happened">
+                                <button class="project-button github-link"></button>
+                            </a>
+                            <!--<a href="">-->
+                                <!--<button class="project-button website-link"></button>-->
+                            <!--</a>-->
+                        </div>
+                        <div class="project-description" id="what-happened-description">
+                            <p>What happened in history on your date of birth?</p>
+                        </div>
+                    </div>
                 </div>
             </div>
             <!--END PROJECTS-->
 
             <!--FOOTER-->
-            <div class="section footer">
-                <div class="footer-name">
-                    <p>© Bethany Corder | 2017</p>
+            <div class="footer" id="footer">
+                <div class="footer-links">
+                    <a href="https://www.linkedin.com/in/bethanycorder"><img src="images/linkedin_button.png"></a><a href="https://github.com/radiantdinosaurs"><img src="images/git_button.png"></a>
+                </div>
+                <div class="footer-text">
+                    <p>Bethany Corder © 2018</p>
                 </div>
             </div>
             <!--END FOOTER-->
+
+
         </div>
         <script src="/scripts/scripts.js"></script>
     </body>
