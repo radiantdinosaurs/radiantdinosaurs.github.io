@@ -1,232 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8"/>
-        <meta name="viewport"
-              content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
-        <title>@radiantdinosaurs</title>
-        <link rel="stylesheet" href="/styles/styles.css"/>
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600|Roboto:300,400,500|PT+Mono|Lato|Rammetto+One" rel="stylesheet">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <body>
-        <div class="page">
+   <head>
+      <!-- META TAGS -->
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+      <!-- TITLE -->
+      <title>@radiantdinosaurs</title>
+      <!-- STYLESHEETS -->
+      <link rel="stylesheet" href="/styles/normalize.css" />
+      <link rel="stylesheet" href="/styles/styles.css" />
+      <!-- FONTS -->
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600|Roboto:300,400,500|Rammetto+One|IBM+Plex+Mono:400" rel="stylesheet">
 
-            <!--TOP SECTION-->
-            <div class="top-section-container">
+      <!-- FAVICONS -->
+      <link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-touch-icon.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="images/favicons/favicon-16x16.png">
+      <link rel="manifest" href="images/favicons/site.webmanifest">
+      <link rel="mask-icon" href="images/favicons/safari-pinned-tab.svg" color="#d9c1e9">
+      <meta name="msapplication-TileColor" content="#603cba">
+      <meta name="theme-color" content="#ffffff">
 
-                <!--NAVIGATION BAR-->
-                <div class="nav-container">
-                    <div class="nav">
-                        <a href="#" class="justify-start">
-                            <button class="nav-logo">
-                                B
-                            </button>
-                        </a>
-                        <a href="#skills" class="justify-end">
-                            <button class="nav-link">
-                                Skills
-                            </button>
-                        </a>
-                        <a href="#projects" class="justify-end">
-                            <button class="nav-link">
-                                Projects
-                            </button>
-                        </a>
-                    </div>
-                </div>
-                <!--END NAVIGATION BAR-->
-
-                <!--HEADER-->
-                <div class="header-container">
-                    <div class="header-titles">
-                        <h1>Bethany Corder</h1>
-                        <br>
-                        <h2>Full-Stack Web Developer</h2>
-                        <br>
-                    </div>
-                    <div class="computer-screen-container">
-                        <div class="computer-cam"></div>
-                        <div class="computer-screen"></div>
-                        <div class="computer-screen-number-line-container">
-<pre id="number-line">
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16</pre>
-                        </div>
-                        <div class="computer-screen-typewriter-container">
-<pre id="typewriter-desktop" class="typewriter">
-<span class="var">const</span> <span class="var-name-em">human</span> = {
-    <span class="var-name">name</span>: <span class="string-highlight">'Bethany Corder'</span>,
-    <span class="var-name">location</span>: <span class="string-highlight">'Earth'</span>
-}
-
-<span class="var">function</span> <em>sayHello()</em> {
-    <span class="var-name">console.</span>log(<span class="string-highlight">'Hello! </span><span class="string-highlight">My name is '</span> + <span class="var-name-em">human.</span><span class="var-name">name</span>)
-}
-
-<em>sayHello()</em>
-</pre>
-<pre id="typewriter-mobile" class="typewriter">
-<span class="var">const</span> <span class="var-name-em">human</span> = {
-  <span class="var-name">name</span>: <span class="string-highlight">'Bethany Corder'</span>,
-  <span class="var-name">location</span>: <span class="string-highlight">'Earth'</span>
-}
-
-<span class="var">function</span> <em>sayHello()</em> {
-  <span class="var-name">console.</span>log(<span class="string-highlight">'Hello! '</span> +
-    <span class="string-highlight">'My name is '</span> +
-    <span class="var-name-em">human.</span><span class="var-name">name</span>)
-}
-
-<em>sayHello()</em></pre>
-<pre id="typewriter-tablet" class="typewriter">
-<span class="var">const</span> <span class="var-name-em">human</span> = {
-    <span class="var-name">name</span>: <span class="string-highlight">'Bethany Corder'</span>,
-    <span class="var-name">location</span>: <span class="string-highlight">'Earth'</span>
-}
-
-<span class="var">function</span> <em>sayHello()</em> {
-    <span class="var-name">console.</span>log(<span class="string-highlight">'Hello! </span><span class="string-highlight">My name is '</span> +
-        <span class="var-name-em">human.</span><span class="var-name">name</span>)
-}
-
-<em>sayHello()</em></pre>
-                    </div>
-                    </div>
-                    <div class="down-arrow-container">
-                        <a href="#skills">
-                            <button class="down-arrow bounce" id="bouncing-down-arrow">
-                            </button>
-                        </a>
-                    </div>
-                </div>
-                <!--END HEADER-->
-
-            </div>
-            <!--END TOP SECTION-->
-
-            <!--SKILLS-->
-            <div class="skills-section-container">
-                <div class="skills-section" id="skills">
-                    <div class="skills-section-header">
-                        <h1>My Skills</h1>
-                        <h2>Languages, tools, and everything in-between that I've taken time to learn and use</h2>
-                    </div>
-                    <div class="skills-section-card">
-                        <h2>Front-End</h2>
-                        <ul>
-                            <li>React.js</li>
-                            <li>Vue.js</li>
-                            <li>HTML5 and CSS3</li>
-                            <li>Templating Engines</li>
-                        </ul>
-                    </div>
-                    <div class="skills-section-card">
-                        <h2>Back-End</h2>
-                        <ul>
-                            <li>Node.js</li>
-                            <li>MongoDB</li>
-                            <li>MySQL</li>
-                        </ul>
-                    </div>
-                    <div class="skills-section-card">
-                        <h2>Languages</h2>
-                        <ul>
-                            <li>JavaScript</li>
-                            <li>Java</li>
-                        </ul>
-                    </div>
-                    <div class="skills-section-card">
-                        <h2>Other</h2>
-                        <ul>
-                            <li>Git</li>
-                            <li>Docker</li>
-                            <li>Postman</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <!--END SKILLS-->
-
-            <!--PROJECTS-->
-            <div class="project-section-container">
-                <div class="project-section" id="projects">
-                    <div class="project-section-header">
-                        <h1>My Work</h1>
-                        <h2>Want to see more work? Check out my <a href="https://github.com/radiantdinosaurs">GitHub</a>.</h2>
-                    </div>
-                    <div class="project-section-card" id="slothbucket">
-                        <h2>Slothbucket</h2>
-                        <div class="project-link-container" id="slothbucket-project-link">
-                            <a href="https://github.com/radiantdinosaurs/slothbucket">
-                                <button class="project-button github-link"></button>
-                            </a>
-                            <a href="https://slothbucket.herokuapp.com">
-                                <button class="project-button website-link"></button>
-                            </a>
-                        </div>
-                        <div class="project-description" id="slothbucket-description">
-                            <p>An image hosting site for <em>only</em> pictures of sloths.</p>
-                        </div>
-                    </div>
-                    <div class="project-section-card" id="myanimestats">
-                        <h2>MyAnimeStats</h2>
-                        <div class="project-link-container" id="myanimestats-project-link">
-                            <a href="https://github.com/radiantdinosaurs/myanimestats">
-                                <button class="project-button github-link"></button>
-                            </a>
-                            <!--<a href="">-->
-                                <!--<button class="project-button website-link"></button>-->
-                            <!--</a>-->
-                        </div>
-                        <div class="project-description" id="myanimestats-description">
-                            <p>See interesting stats about your anime-watching habits.</p>
-                        </div>
-                    </div>
-                    <div class="project-section-card" id="what-happened">
-                        <h2>What Happened?</h2>
-                        <div class="project-link-container" id="what-happened-project-link">
-                            <a href="https://github.com/radiantdinosaurs/what-happened">
-                                <button class="project-button github-link"></button>
-                            </a>
-                            <a href="https://what-happened.herokuapp.com">
-                                <button class="project-button website-link"></button>
-                            </a>
-                        </div>
-                        <div class="project-description" id="what-happened-description">
-                            <p>What happened in history on your date of birth?</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--END PROJECTS-->
-
-            <!--FOOTER-->
-            <div class="footer" id="footer">
-                <div class="footer-links">
-                    <a href="https://www.linkedin.com/in/bethanycorder"><img src="images/linkedin_button.png"></a><a href="https://github.com/radiantdinosaurs"><img src="images/git_button.png"></a>
-                </div>
-                <div class="footer-text">
-                    <p>Bethany Corder © 2018</p>
-                </div>
-            </div>
-            <!--END FOOTER-->
-
-
-        </div>
-        <script src="/scripts/scripts.js"></script>
-    </body>
+      <!-- SCRIPTS -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+      <script src="https://unpkg.com/typewriter-effect/dist/core.js"></script>
+   <body>
+      <!-- HEADER -->
+      <header class="landing">
+         <!-- NAVIGATION -->
+         <nav class="landing-nav">
+            <button class="landing-nav-home-button" aria-label="Home button">
+            B
+            </button>
+         </nav>
+         <!-- TITLES -->
+         <header class="landing-titles">
+            <h1>Bethany Corder</h1>
+            <h2>Full-Stack Web Developer</h2>
+         </header>
+         <!-- LAPTOP -->
+         <section class="laptop-container">
+            <span class="laptop-top-lip"></span>
+            <span class="laptop-left-lip"></span>
+            <span class="laptop-right-lip"></span>
+            <span class="laptop-webcam-container">
+            <span class="laptop-webcam"></span>
+            </span>
+            <!-- LAPTOP SCREEN -->
+            <section class="laptop-screen">
+               <span class="laptop-number-line">
+               1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10<br>11<br>12<br>13<br>14
+               </span>
+               <div id="laptop-typewriter"></div>
+            </section>
+            <!-- DOWN ARROW -->
+            <section class="down-arrow-container">
+               <a href="#skills">
+               <button class="down-arrow bounce"></button>
+               </a>
+            </section>
+         </section>
+      </header>
+      <!-- SKILLS -->
+      <article class="skills-container" id="skills">
+         <section class="skills">
+            <!-- TITLES -->
+            <h1>My Skills</h1>
+            <h2>Languages, tools, and everything in-between that I've taken time to learn and use</h2>
+            <!-- CARDS CONTAINER -->
+            <section class="skills-cards-container">
+               <!-- CARD -->
+               <section class="skills-card">
+                  <h3>Front-End</h3>
+                  <ul>
+                     <li>React.js</li>
+                     <li>Redux</li>
+                     <li>HTML5 and CSS3</li>
+                     <li>Templating Engines</li>
+                  </ul>
+               </section>
+               <!-- CARD -->
+               <section class="skills-card">
+                  <h3>Back-End</h3>
+                  <ul>
+                     <li>Node.js</li>
+                     <li>MongoDB</li>
+                     <li>MySQL</li>
+                  </ul>
+               </section>
+               <!-- CARD -->
+               <section class="skills-card">
+                  <h3>Languages</h3>
+                  <ul>
+                     <li>JavaScript</li>
+                     <li>Java</li>
+                  </ul>
+               </section>
+               <!-- CARD -->
+               <section class="skills-card">
+                  <h3>Other</h3>
+                  <ul>
+                     <li>Git</li>
+                     <li>Docker</li>
+                     <li>Postman</li>
+                  </ul>
+               </section>
+            </section>
+         </section>
+         <!-- DOWN ARROW -->
+         <section class="down-arrow-container" id="skills-down-arrow">
+            <a href="#projects">
+            <button class="down-arrow bounce"></button>
+            </a>
+         </section>
+      </article>
+      <!-- PROJECTS -->
+      <article class="projects-container" id="projects">
+         <section class="projects" id="projects">
+            <!-- TITLES -->
+            <h1>My Work</h1>
+            <h2>Want to see more work? Check out my <a href="https://github.com/radiantdinosaurs" target="blank">GitHub</a>.</h2>
+            <!-- CARDS CONTAINER -->
+            <section class="projects-cards-container">
+               <!-- CARD -->
+               <section class="projects-card" id="slothbucket">
+                  <h3>Slothbucket</h3>
+                  <section class="project-description">
+                     <section class="project-link-container">
+                        <button class="project-button github-link" onclick="window.open('https://github.com/radiantdinosaurs/slothbucket', '_blank');" aria-label="GitHub repo for Slothbucket"></button>
+                        <button class="project-button website-link" onclick="window.open('https://slothbucket.herokuapp.com', '_blank');" aria-label="Project link for Slothbucket"></button>
+                     </section>
+                     <p>An image hosting site for <em>only</em> pictures of sloths.</p>
+                  </section>
+               </section>
+               <!-- CARD -->
+               <section class="projects-card" id="do-you-want-to-be-a-billionare">
+                  <h3>Do You Want to be a Billionaire?</h3>
+                  <section class="project-description">
+                     <section class="project-link-container">
+                        <button class="project-button github-link" onclick="window.open('https://github.com/radiantdinosaurs/do-you-want-to-be-a-billionaire', '_blank');" aria-label="GitHub repo for Do You Want to be a Billionaire"></button>
+                        <button class="project-button website-link" onclick="window.open('https://virtual-billionaire.herokuapp.com/', '_blank');" aria-label="Project link for Do You Want to be a Billionaire"></button>
+                     </section>
+                     <p>Answer trivia to try to win a billion (imaginary) dollars.</p>
+                  </section>
+               </section>
+               <!-- CARD -->
+               <div class="projects-card" id="what-happened">
+                  <h3>What Happened?</h3>
+                  <section class="project-description">
+                     <section class="project-link-container">
+                        <button class="project-button github-link" onclick="window.open('https://github.com/radiantdinosaurs/what-happened', '_blank');" aria-label="GitHub repo for What Happened"></button>
+                        <button class="project-button website-link" onclick="window.open('https://what-happened.herokuapp.com', '_blank');" aria-label="Project link for What Happened"></button>
+                     </section>
+                     <p>What happened in history on your date of birth?</p>
+                  </section>
+               </div>
+            </section>
+         </section>
+      </article>
+      <!-- FOOTER -->
+      <footer>
+         <section>
+            <a href="https://www.linkedin.com/in/bethanycorder" target="blank">
+            <img src="images/linkedin_button.png">
+            </a>
+            <a href="https://github.com/radiantdinosaurs" target="blank">
+            <img src="images/git_button.png">
+            </a>
+         </section>
+         <p>Bethany Corder © 2019</p>
+      </footer>
+      <script src="/scripts/scripts.js"></script>
+   </body>
 </html>
+

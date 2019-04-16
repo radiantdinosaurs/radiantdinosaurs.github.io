@@ -1,233 +1,47 @@
-$(document).ready(function(){
-    $('a').on('click', function(event) {
-        if (this.hash !== '') {
-            event.preventDefault()
-            var hash = this.hash
-            $('html, body').animate({
-                scrollTop: $(hash).offset().top
-            }, 800, function() {
-                window.location.hash = hash;
-            })
-        }
-    })
+$(document).ready(function() {
+    var app = document.getElementById("laptop-typewriter");
+    var typewriter = new Typewriter(app, {
+        delay: 75
+    });
 
-    if ($(window).width() > 960) {
-        $('#slothbucket').hover(function(){
-            $('#slothbucket-project-link').slideToggle('fast');
-            $('#slothbucket-description').slideToggle('fast');
-        },function(){
-            $('#slothbucket-project-link').slideToggle('fast');
-            $('#slothbucket-description').slideToggle('fast');
-        });
-
-        $('#myanimestats').hover(function(){
-            $('#myanimestats-project-link').slideToggle('fast');
-            $('#myanimestats-description').slideToggle('fast');
-        },function(){
-            $('#myanimestats-project-link').slideToggle('fast');
-            $('#myanimestats-description').slideToggle('fast');
-        });
-
-        $('#what-happened').hover(function(){
-            $('#what-happened-project-link').slideToggle('fast');
-            $('#what-happened-description').slideToggle('fast');
-        },function(){
-            $('#what-happened-project-link').slideToggle('fast');
-            $('#what-happened-description').slideToggle('fast');
-        });
-    }
-
-    if ($(window).width() >= 961) {
-        function setupTypewriter(t) {
-            var HTML = t.innerHTML
-            t.innerHTML = ''
-            var cursorPosition = 0,
-                tag = '',
-                writingTag = false,
-                tagOpen = false,
-                typeSpeed = 20,
-                tempTypeSpeed = 0
-            var type = function() {
-                if (writingTag === true) {
-                    tag += HTML[cursorPosition]
-                }
-                if (HTML[cursorPosition] === '<') {
-                    tempTypeSpeed = 0
-                    if (tagOpen) {
-                        tagOpen = false
-                        writingTag = true
-                    } else {
-                        tag = '';
-                        tagOpen = true
-                        writingTag = true
-                        tag += HTML[cursorPosition]
-                    }
-                }
-                if (!writingTag && tagOpen) {
-                    tag.innerHTML += HTML[cursorPosition]
-                }
-                if (!writingTag && !tagOpen) {
-                    if (HTML[cursorPosition] === ' ') {
-                        tempTypeSpeed = 0;
-                    }
-                    else {
-                        tempTypeSpeed = (Math.random() * typeSpeed) + 50
-                    }
-                    t.innerHTML += HTML[cursorPosition]
-                }
-                if (writingTag === true && HTML[cursorPosition] === '>') {
-                    tempTypeSpeed = (Math.random() * typeSpeed) + 50
-                    writingTag = false
-                    if (tagOpen) {
-                        var newSpan = document.createElement('span')
-                        t.appendChild(newSpan)
-                        newSpan.innerHTML = tag
-                        tag = newSpan.firstChild
-                    }
-                }
-
-                cursorPosition += 1
-                if (cursorPosition < HTML.length - 1) {
-                    setTimeout(type, tempTypeSpeed)
-                }
-
-            }
-            return {
-                type: type
-            }
-        }
-
-        var typer = document.getElementById('typewriter-desktop')
-        typewriter = setupTypewriter(typer)
-        typewriter.type()
-    }
-    if($(window).width() >= 501 || $(window).width() <= 960) {
-        function setupTypewriter(t) {
-            var HTML = t.innerHTML
-            t.innerHTML = ''
-            var cursorPosition = 0,
-                tag = '',
-                writingTag = false,
-                tagOpen = false,
-                typeSpeed = 20,
-                tempTypeSpeed = 0
-            var type = function() {
-                if (writingTag === true) {
-                    tag += HTML[cursorPosition]
-                }
-                if (HTML[cursorPosition] === '<') {
-                    tempTypeSpeed = 0
-                    if (tagOpen) {
-                        tagOpen = false
-                        writingTag = true
-                    } else {
-                        tag = ''
-                        tagOpen = true
-                        writingTag = true
-                        tag += HTML[cursorPosition]
-                    }
-                }
-                if (!writingTag && tagOpen) {
-                    tag.innerHTML += HTML[cursorPosition]
-                }
-                if (!writingTag && !tagOpen) {
-                    if (HTML[cursorPosition] === ' ') {
-                        tempTypeSpeed = 0;
-                    }
-                    else {
-                        tempTypeSpeed = (Math.random() * typeSpeed) + 50
-                    }
-                    t.innerHTML += HTML[cursorPosition]
-                }
-                if (writingTag === true && HTML[cursorPosition] === '>') {
-                    tempTypeSpeed = (Math.random() * typeSpeed) + 50
-                    writingTag = false
-                    if (tagOpen) {
-                        var newSpan = document.createElement('span')
-                        t.appendChild(newSpan)
-                        newSpan.innerHTML = tag
-                        tag = newSpan.firstChild
-                    }
-                }
-
-                cursorPosition += 1;
-                if (cursorPosition < HTML.length - 1) {
-                    setTimeout(type, tempTypeSpeed)
-                }
-
-            }
-            return {
-                type: type
-            }
-        }
-
-        var typer = document.getElementById('typewriter-tablet')
-        typewriter = setupTypewriter(typer)
-        typewriter.type()
-    }
-    if($(window).width() <= 500) {
-        function setupTypewriter(t) {
-            var HTML = t.innerHTML
-            t.innerHTML = ''
-            var cursorPosition = 0,
-                tag = '',
-                writingTag = false,
-                tagOpen = false,
-                typeSpeed = 20,
-                tempTypeSpeed = 0
-            var type = function() {
-                if (writingTag === true) {
-                    tag += HTML[cursorPosition]
-                }
-                if (HTML[cursorPosition] === '<') {
-                    tempTypeSpeed = 0
-                    if (tagOpen) {
-                        tagOpen = false
-                        writingTag = true
-                    } else {
-                        tag = ''
-                        tagOpen = true
-                        writingTag = true
-                        tag += HTML[cursorPosition]
-                    }
-                }
-                if (!writingTag && tagOpen) {
-                    tag.innerHTML += HTML[cursorPosition]
-                }
-                if (!writingTag && !tagOpen) {
-                    if (HTML[cursorPosition] === ' ') {
-                        tempTypeSpeed = 0;
-                    }
-                    else {
-                        tempTypeSpeed = (Math.random() * typeSpeed) + 50
-                    }
-                    t.innerHTML += HTML[cursorPosition]
-                }
-                if (writingTag === true && HTML[cursorPosition] === '>') {
-                    tempTypeSpeed = (Math.random() * typeSpeed) + 50
-                    writingTag = false
-                    if (tagOpen) {
-                        var newSpan = document.createElement('span')
-                        t.appendChild(newSpan)
-                        newSpan.innerHTML = tag
-                        tag = newSpan.firstChild
-                    }
-                }
-
-                cursorPosition += 1;
-                if (cursorPosition < HTML.length - 1) {
-                    setTimeout(type, tempTypeSpeed)
-                }
-
-            }
-            return {
-                type: type
-            }
-        }
-
-        var typer = document.getElementById('typewriter-mobile')
-        typewriter = setupTypewriter(typer)
-        typewriter.type()
-    }
-
+    typewriter
+        .typeString(
+            'class <span class="syntax-purple">Human</span> <span class="curly-braces">{</span>'
+        )
+        .typeString("<br>")
+        .typeString(
+            '<span class="indent-once">constructor</span><span class="parentheses">(</span><span class="syntax-purple">name</span><span class="parentheses">)</span> <span class="curly-braces">{</span>'
+        )
+        .typeString("<br>")
+        .typeString(
+            '<span class="syntax-purple indent-twice">this</span>.name = name;'
+        )
+        .typeString("<br>")
+        .typeString('<span class="indent-once curly-braces">}</span>')
+        .typeString("<br>")
+        .typeString("<br>")
+        .pauseFor(500)
+        .typeString(
+            '<span class="indent-once">get</span> <span class="syntax-purple">greeting</span><span class="parentheses">()</span> <span class="curly-braces">{'
+        )
+        .typeString("<br>")
+        .typeString(
+            '<span class="indent-twice syntax-purple">return</span> <span class="syntax-red">`Hello! My name is</span>'
+        )
+        .typeString("<br>")
+        .typeString(
+            '<span class="indent-twice">$</span><span class="curly-braces">{</span>this.<span class="syntax-purple">name</span><span class="curly-braces">}</span>!<span class="syntax-red">`</span>;'
+        )
+        .typeString("<br>")
+        .typeString('<span class="indent-once">}</span>')
+        .typeString("<br>")
+        .typeString("<br>")
+        .typeString(
+            'const <span class="sytax-purple">Coder</span> = <span class="syntax-purple">new</span> Human<span class="parentheses">(</span><span class="syntax-red">"Bethany"</span><span class="parentheses">)</span>;'
+        )
+        .typeString("<br>")
+        .typeString("<br>")
+        .typeString("Coder.greeting;")
+        .start();
+    console.log("Hello! My name is Bethany!");
 });
