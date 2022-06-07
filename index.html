@@ -10,6 +10,8 @@
    <!-- STYLESHEETS -->
    <link rel="stylesheet" href="/styles/normalize.css" />
    <link rel="stylesheet" href="/styles/styles.css" />
+   <link rel="stylesheet" href="/styles/laptop.css" />
+   <link rel="stylesheet" href="/styles/down.css" />
    <!-- FONTS -->
    <link
       href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600|Roboto:300,400,500|Rammetto+One|IBM+Plex+Mono:400"
@@ -29,63 +31,55 @@
    <script src="https://unpkg.com/typewriter-effect/dist/core.js"></script>
 
 <body>
-   <!-- HEADER -->
-   <header class="landing">
-      <!-- NAVIGATION -->
-      <nav class="landing-nav">
-         <button class="landing-nav-home-button" aria-label="Home button">
-            B
-         </button>
-      </nav>
+   <!-- LANDING -->
+   <section class="landing section">
       <!-- TITLES -->
-      <header class="landing-titles">
-         <h1>Bethany Corder</h1>
-         <h2>Full-Stack Web Developer</h2>
+      <header class="landing-titles-row">
+         <h1>Bethany <span>Vorakrajangthiti</span></h1>
+         <h2>Software Engineer <img src="../images/ic_favorite_white_48px.svg" /> San Francisco, CA</h2>
       </header>
       <!-- LAPTOP -->
-      <section class="laptop-container">
-         <span class="laptop-top-lip"></span>
-         <span class="laptop-left-lip"></span>
-         <span class="laptop-right-lip"></span>
+      <div class="laptop-container">
          <span class="laptop-webcam-container">
-            <span class="laptop-webcam"></span>
+            <span class="laptop-webcam-notch">
+               <span class="laptop-webcam"></span>
+            </span>
          </span>
          <!-- LAPTOP SCREEN -->
-         <section class="laptop-screen">
+         <div class="laptop-screen">
             <span class="laptop-number-line">
-               1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10<br>11<br>12<br>13<br>14
+               1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18
             </span>
-            <div id="laptop-typewriter"></div>
-         </section>
-         <!-- DOWN ARROW -->
-         <section class="down-arrow-container">
-            <a href="#skills">
-               <button class="down-arrow bounce"></button>
-            </a>
-         </section>
-      </section>
-   </header>
+            <div class="laptop-typewriter" id="laptop-typewriter"></div>
+         </div>
+      </div>
+      <!-- DOWN ARROW -->
+      <div class="down-arrow-container">
+         <a class="down-arrow bounce" href="#skills">
+            <img src="../images/ic_expand_more_white_48px.svg" />
+         </a>
+      </div>
+   </section>
    <!-- SKILLS -->
-   <article class="skills-container" id="skills">
-      <section class="skills">
+   <section class="skills section" id="skills">
+      <div class="section-column">
          <!-- TITLES -->
          <h1>My Skills</h1>
-         <h2>Languages, tools, and everything in-between that I've taken time to learn and use</h2>
+         <h2>Languages, tools, and everything in-between.</h2>
          <!-- CARDS CONTAINER -->
-         <section class="skills-cards-container">
+         <div class="skills-cards-container">
             <!-- CARD -->
-            <section class="skills-card">
+            <div class="skills-card">
                <h3>Languages</h3>
                <ul>
                   <li>JavaScript</li>
-                  <li>Python</li>
-                  <li>Java</li>
                   <li>HTML5/CSS3</li>
-                  <li>SASS</li>
+                  <li>Java</li>
+                  <li>Python</li>
                </ul>
-            </section>
+            </div>
             <!-- CARD -->
-            <section class="skills-card">
+            <div class="skills-card">
                <h3>Frameworks/Libraries</h3>
                <ul>
                   <li>Node</li>
@@ -97,9 +91,9 @@
                   <li>Jest</li>
                   <li>Enzyme</li>
                </ul>
-            </section>
+            </div>
             <!-- CARD -->
-            <section class="skills-card">
+            <div class="skills-card">
                <h3>Tools</h3>
                <ul>
                   <li>MongoDB</li>
@@ -112,9 +106,9 @@
                   <li>Heroku</li>
                   <li>ESLint</li>
                </ul>
-            </section>
+            </div>
             <!-- CARD -->
-            <section class="skills-card">
+            <div class="skills-card">
                <h3>Other</h3>
                <ul>
                   <li>Unit Testing</li>
@@ -123,73 +117,91 @@
                   <li>Accessibility</li>
                   <li>SEO</li>
                </ul>
-            </section>
-         </section>
-      </section>
+            </div>
+         </div>
+      </div>
       <!-- DOWN ARROW -->
-      <section class="down-arrow-container" id="skills-down-arrow">
-         <a href="#projects">
-            <button class="down-arrow bounce"></button>
+      <div class="down-arrow-container">
+         <a class="down-arrow bounce" href="#projects">
+            <img src="../images/ic_expand_more_white_48px.svg" />
          </a>
-      </section>
-   </article>
+      </div>
+   </section>
    <!-- PROJECTS -->
-   <article class="projects-container" id="projects">
-      <section class="projects" id="projects">
+   <section class="projects section" id="projects">
+      <div class="section-column">
          <!-- TITLES -->
          <h1>My Work</h1>
          <h2>Want to see more work? Check out my <a href="https://github.com/radiantdinosaurs"
                target="blank">GitHub</a>.</h2>
          <!-- CARDS CONTAINER -->
-         <section class="projects-cards-container">
+         <div class="projects-cards-container">
             <!-- CARD -->
-            <section class="projects-card" id="slothbucket">
+            <div class="projects-card" id="slothbucket">
                <h3>Slothbucket</h3>
-               <section class="project-description">
-                  <section class="project-link-container">
-                     <button class="project-button github-link"
-                        onclick="window.open('https://github.com/radiantdinosaurs/slothbucket', '_blank');"
-                        aria-label="GitHub repo for Slothbucket"></button>
-                     <button class="project-button website-link"
-                        onclick="window.open('https://slothbucket.herokuapp.com', '_blank');"
-                        aria-label="Project link for Slothbucket"></button>
-                  </section>
+               <div class="project-description">
+                  <div class="project-link-container">
+                     <a
+                        href="https://github.com/radiantdinosaurs/slothbucket"
+                        target="_blank"
+                     >
+                        <img src="../images/ic_code_white_48px.svg" alt="GitHub" width="28px" height="28px" />
+                     </a>
+                     <a
+                        href="https://slothbucket.herokuapp.com"
+                        target="_blank"
+                     >
+                        <img src="../images/ic_web_white_48px.svg" alt="Project link" width="28px" height="28px"/>
+                     </a>
+                  </div>
                   <p>An image hosting site for <em>only</em> pictures of sloths.</p>
-               </section>
-            </section>
+               </div>
+            </div>
             <!-- CARD -->
-            <section class="projects-card" id="do-you-want-to-be-a-billionare">
+            <div class="projects-card" id="do-you-want-to-be-a-billionare">
                <h3>Do You Want to be a Billionaire?</h3>
-               <section class="project-description">
-                  <section class="project-link-container">
-                     <button class="project-button github-link"
-                        onclick="window.open('https://github.com/radiantdinosaurs/do-you-want-to-be-a-billionaire', '_blank');"
-                        aria-label="GitHub repo for Do You Want to be a Billionaire"></button>
-                     <button class="project-button website-link"
-                        onclick="window.open('https://virtual-billionaire.herokuapp.com/', '_blank');"
-                        aria-label="Project link for Do You Want to be a Billionaire"></button>
-                  </section>
+               <div class="project-description">
+                  <div class="project-link-container">
+                     <a
+                        href="https://github.com/radiantdinosaurs/do-you-want-to-be-a-billionaire"
+                        target="_blank"
+                     >
+                        <img src="../images/ic_code_white_48px.svg" alt="GitHub" width="28px" height="28px" />
+                     </a>
+                     <a
+                        href="https://virtual-billionaire.herokuapp.com/"
+                        target="_blank"
+                     >
+                        <img src="../images/ic_web_white_48px.svg" alt="Project link" width="28px" height="28px"/>
+                     </a>
+                  </div>
                   <p>Answer trivia to try to win a billion (imaginary) dollars.</p>
-               </section>
-            </section>
+               </div>
+            </div>
             <!-- CARD -->
             <div class="projects-card" id="what-happened">
                <h3>What Happened?</h3>
-               <section class="project-description">
-                  <section class="project-link-container">
-                     <button class="project-button github-link"
-                        onclick="window.open('https://github.com/radiantdinosaurs/what-happened', '_blank');"
-                        aria-label="GitHub repo for What Happened"></button>
-                     <button class="project-button website-link"
-                        onclick="window.open('https://what-happened.herokuapp.com', '_blank');"
-                        aria-label="Project link for What Happened"></button>
-                  </section>
+               <div class="project-description">
+                  <div class="project-link-container">
+                     <a
+                        href="https://github.com/radiantdinosaurs/what-happened"
+                        target="_blank"
+                     >
+                        <img src="../images/ic_code_white_48px.svg" alt="GitHub" width="28px" height="28px" />
+                     </a>
+                     <a
+                        href="https://what-happened.herokuapp.com"
+                        target="_blank"
+                     >
+                        <img src="../images/ic_web_white_48px.svg" alt="Project link" width="28px" height="28px"/>
+                     </a>
+                  </div>
                   <p>What happened in history on your date of birth?</p>
-               </section>
+               </div>
             </div>
-         </section>
-      </section>
-   </article>
+         </div>
+      </div>
+   </section>
    <!-- FOOTER -->
    <footer>
       <section>
@@ -200,7 +212,7 @@
             <img src="images/git_button.png">
          </a>
       </section>
-      <p>Bethany Corder © 2019</p>
+      <p>Bethany Corder © 2022</p>
    </footer>
    <script src="/scripts/scripts.js"></script>
 </body>

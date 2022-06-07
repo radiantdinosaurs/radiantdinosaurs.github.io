@@ -1,0 +1,127 @@
+.laptop-container {
+    position: relative;
+    border: 12px solid #5d707f;
+    border-bottom: none;
+    border-top-right-radius: 12px;
+    border-top-left-radius: 12px;
+    width: 100%;
+    max-width: 1000px;
+}
+
+
+.laptop-webcam-container {
+    position: absolute;
+    top: -1px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.laptop-webcam-notch {
+    background-color: #5d707f;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    height: 20px;
+    width: 96px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.laptop-webcam {
+    background-color: #748291;
+    border: solid 1px #6e7b8a;
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+}
+
+.laptop-screen {
+    background: rgb(248, 248, 248)
+        radial-gradient(circle, #ffffff, #fdfdfd, #fbfcfb, #fafafa, #f8f8f8);
+    display: flex;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.laptop-number-line {
+    background-color: rgb(240, 240, 240);
+    border-right: solid 1px rgb(207, 207, 207);
+    padding: 24px 8px 0 8px;
+    margin-right: 16px;
+    text-align: right;
+    color: #808388;
+    display: flex;
+    flex-direction: column;
+    width: 40px;
+}
+
+.laptop-typewriter {
+    padding-top: 24px;
+}
+
+.indent-once {
+    margin-left: 16px;
+}
+
+.indent-twice {
+    margin-left: 32px;
+}
+
+.syntax-purple {
+    color: rgb(150, 41, 153);
+}
+
+.curly-braces {
+    color: rgb(231, 230, 208);
+}
+
+.parentheses {
+    color: rgb(221, 179, 75);
+}
+
+.syntax-red {
+    color: rgb(169, 39, 51);
+}
+
+/* TABLETS ********************************************************************/
+
+@media only screen and (max-width: 800px) {
+    .laptop-container {
+        max-width: 525px;
+    }
+
+    .laptop-webcam-container {
+        top: 3px;
+    }
+
+    .laptop-webcam-notch {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+    }
+}
+
+
+/* PHONES *********************************************************************/
+
+@media only screen and (max-width: 600px) {
+    .laptop-container {
+        max-width: 475px;
+    }
+
+    .laptop-screen {
+        font-size: 14px;
+        height: 300px;
+        padding: 16px 8px;
+    }
+
+    .laptop-typewriter {
+        padding: 0;
+    }
+
+    .laptop-number-line {
+        display: none;
+    }
+}
